@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func tokenise(textStr string) []string {
+func Tokenize(textStr string) []string {
 	reg := regexp.MustCompile(`[\s,.!?]+`)
 
 	tokens := reg.Split(textStr, -1)
@@ -18,4 +18,8 @@ func tokenise(textStr string) []string {
 	}
 
 	return result
+}
+
+func m1(a, b int) int {
+	return a + b
 }
